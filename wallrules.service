@@ -1,0 +1,13 @@
+[Unit]
+
+Description=wallrules
+
+After=default.target
+
+[Service]
+
+ExecStart=/root/bin/wallrules.sh
+
+[Install]
+
+WantedBy=default.target

@@ -1,0 +1,13 @@
+[Unit]
+
+Description=fencerules
+
+After=default.target
+
+[Service]
+
+ExecStart=/root/bin/fencerules.sh
+
+[Install]
+
+WantedBy=default.target
