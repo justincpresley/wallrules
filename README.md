@@ -52,4 +52,4 @@ Yes. Yes, then the firewall is doing it's job. Goodluck!
 
 Alright, alright. You have two options here with the second being preferred.
 1. You can permanently open the necessary ports for apt (http(80), https(443), ftp(21)).
-2. You run `fieldrules.sh` (provided), apply updates and do what you need to do, and then reboot/rerun the rules.
+2. You run `fencerules.sh`, apply updates and do what you need to do, and then reboot/rerun the rules.
