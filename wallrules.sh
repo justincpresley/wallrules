@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script is like a wall, only what is permitted to
+# get over it will get over it.
+
 # Set default chain policies that will trigger
 # when a packet reaches the end of the rule chain.
 # DROP Everything. Its all trash traffic.

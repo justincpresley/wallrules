@@ -1,6 +1,6 @@
 # wallrules: Clean, Secure, Custom Rules for iptables
 
-**iptables** is the #1 utility tool that allows system administrators to configure the IP packet filter rules of the Linux kernel firewall. There are many tools that are built on-top of iptables such as ufw that attempt to make it easier to configure a host-based firewall. However, hiding the complexity also limits configurability and secureness.
+**iptables** is the #1 utility tool that allows system administrators to configure the IP packet filter rules of the Linux kernel firewall. There are many tools that are built on-top of iptables such as **ufw** that attempt to make it easier to configure a host-based firewall. However, hiding the complexity also limits configurability and secureness.
 
 ***wallrules*** attempts to make it easy to get started with iptables by providing scripts to develop a clean, secure, and custom configuration for iptables.
 
@@ -44,7 +44,7 @@ $ sudo systemctl enable SERVICE
 We can apply some hardening techniques to make our script secure from local users.
 1. Permissions: `chmod 100 SCRIPT`
 2. Immuntable: `chattr +i SCRIPT`
-3. Access: Disabling root (`vim /etc/passwd` and orange text on the first line (end of the line) `/sbin/nologin`.
+3. Access: Disabling root (`vim /etc/passwd` and orange text on the first line (end of the line) `/sbin/nologin`).
 
 ## HELP! I Can't use Apt Install!
 
@@ -52,4 +52,4 @@ Yes. Yes, then the firewall is doing it's job. Goodluck!
 
 Alright, alright. You have two options here with the second being preferred.
 1. You can permanently open the necessary ports for apt (http(80), https(443), ftp(21)).
-2. You can flush your rules with `iptables -F`, apply updates and do what you need to do, and then reboot/rerun the script.
+2. You run `fieldrules.sh` (provided), apply updates and do what you need to do, and then reboot/rerun the rules.

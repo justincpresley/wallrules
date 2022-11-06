@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script is like a fence, blocks bad stuff,
+# but anyone can just hop over it.
+
 # Set default chain policies
 iptables -F
 iptables -P INPUT ACCEPT
